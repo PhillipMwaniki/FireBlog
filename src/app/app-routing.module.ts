@@ -7,16 +7,16 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 const appRoutes: Routes = [
     {
         path: '',
-        loadChildren: 'app/modules/reader/reader.module#ReaderModule'
+        loadChildren: 'app/reader-module/reader.module#ReaderModule'
     },
     {
         path: 'editor',
-        loadChildren: 'app/modules/editor/editor.module#EditorModule'
+        loadChildren: 'app/editor-module/editor.module#EditorModule'
     },
     { path: '**', component: PageNotFoundComponent }
 ];
 @NgModule({
     imports: [CommonModule, RouterModule.forRoot(appRoutes)],
-    declarations: [RouterModule]
+    exports: [RouterModule]
 })
 export class AppRoutingModule {}

@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReaderPostComponent } from './components/reader-post/reader-post.component';
 import { ReaderPostsComponent } from './components/reader-posts/reader-posts.component';
-import { ReaderRoutingModule } from './reader-routing.module';
+
 import { FormsModule } from '@angular/forms';
+import {ReaderRoutingModule} from './reader-routing.module';
 
 @NgModule({
     imports: [CommonModule, FormsModule, ReaderRoutingModule],
